@@ -1,0 +1,20 @@
+{
+  "name": "task-js-ucoz",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Дьяченко Роман <develop06@datum-group.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Gashaal/task-js-ucoz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#^2.2.2"
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Список книг</title>
+    <link rel="stylesheet" type="text/css" href="dist/app.css">
+</head>
+<body>
+    <main>
+        <div class="form-wrapper">
+            <form class="ui form book-form">
+                <h4 class="ui dividing header book-form__header">Создание новой книги</h4>
+                <div class="field">
+                    <label>Название книги</label>
+                    <input type="text" name="name" class="book-form__name">
+                </div>
+                <div class="field">
+                    <label>Автор</label>
+                    <input type="text" name="author" class="book-form__author">
+                </div>
+                <div class="field">
+                    <label>Год издания</label>
+                    <input type="number" name="year" class="book-form__year">
+                </div>
+                <div class="field">
+                    <label>Количество страниц</label>
+                    <input type="number" name="pages" class="book-form__pages">
+                </div>
+                <div class="ui error message book-form__error">
+                    <div class="header"></div>
+                </div>
+                <div class="form-buttons-wrapper">
+                    <button class="ui button active book-form__cancel">Отмена</button>
+                    <button class="ui positive button book-form__save">Сохранить</button>
+                </div>
+            </form>
+        </div>
+        <div class="list-wrapper">
+            <h4 class="ui dividing header">Список книг</h4>
+        </div>
+    </main>
+
+    <script type="text/html" id="book-item">
+        <div class="book-info">
+            <span class="book-info__name"></span>
+            <span class="book-info__author"></span>
+        </div>
+        <div class="book-action">
+            <button class="ui icon button book-action__edit">
+                <i class="edit icon"></i>
+            </button>
+            <button class="ui icon button book-action__remove">
+                <i class="remove circle outline icon"></i>
+            </button>
+        </div>
+    </script>
+
+    <script src="dist/app.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        app.init();
+    </script>
+</body>
+</html>
